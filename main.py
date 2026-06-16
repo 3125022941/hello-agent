@@ -98,6 +98,17 @@ def list_tasks():
         "count":len(tasks) #任务数量
     }
 
-
+@app.get("/events")
+def list_events():
+    return{
+        "items":events,
+        "count":len(events)
+    }
+@app.get("/observations")
+def list_observations():
+    return{
+        "items":observations,
+        "count":len(observations)
+    }
 
 
